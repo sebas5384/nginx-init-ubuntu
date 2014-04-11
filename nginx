@@ -19,7 +19,7 @@
 #
 # processname: nginx
 # config:      /usr/local/nginx/conf/nginx.conf
-# pidfile:     /usr/local/nginx/logs/nginx.pid
+# pidfile:     /var/run/nginx.pid
 # Provides:    nginx
 #
 # Author:  Jason Giedymin
@@ -80,7 +80,7 @@ DAEMON=/usr/local/nginx/sbin/nginx
 PS="nginx"
 PIDNAME="nginx"                     #lets you do $PS-slave
 PIDFILE=$PIDNAME.pid                #pid file
-PIDSPATH=/usr/local/nginx/logs      #default pid location, you should change it
+PIDSPATH=/var/run                   #default pid location, you should change it
 
 DESCRIPTION="Nginx Server..."
 
